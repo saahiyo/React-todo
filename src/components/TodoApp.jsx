@@ -24,10 +24,10 @@ const TodoApp = () => {
   };
 
   return (
-    <div className="todo-container p-10 w-full mx-auto flex flex-col items-center">
+    <div className="todo-container px-6 py-10 sm:p-10 w-full mx-auto flex flex-col items-center">
       <TodoHeader />
       <form
-        className="input-container mt-5 mb-5 w-1/2 relative"
+        className="input-container mt-5 mb-5 w-full sm:w-1/2 relative"
         onSubmit={handleSubmit}
       >
         <input
@@ -39,10 +39,10 @@ const TodoApp = () => {
         />
         <AddTodo />
       </form>
-      <div className="list-container flex flex-col gap-3 w-1/2">
+      <div className="list-container flex flex-col gap-3 w-full sm:w-1/2">
         <TodoList todo={todo} todos={todos} setTodos={setTodos} />
       </div>
-      <div className="taskStatus w-1/2">
+      <div className="taskStatus w-full sm:w-1/2">
         <h3 className="text-zinc-700 mt-2">
           {todos.filter(todo => todo.isCompleted).length} completed out of {todos.length} total tasks
         </h3>
