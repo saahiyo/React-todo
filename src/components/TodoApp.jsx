@@ -35,7 +35,7 @@ const TodoApp = () => {
           value={todo}
           onChange={(e) => setTodo(e.target.value)}
           placeholder="Add new task.."
-          className="w-full p-4 rounded-md outline-none bg-zinc-800 text-white relative"
+          className="w-full p-4 rounded-md outline-none bg-zinc-800 text-zinc-300 relative"
         />
         <AddTodo />
       </form>

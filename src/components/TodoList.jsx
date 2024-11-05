@@ -31,7 +31,7 @@ const TodoList = ({ todo, todos, setTodos }) => {
                 <div className="w-full h-full rounded-full" onClick={()=> handleComplete(i)}></div>
               )}
             </div>
-            <h1 className="text-white text-lg">{todo.task}</h1>
+            <h1 className="text-zinc-400 text-lg">{todo.task}</h1>
           </div>
           <X
             strokeWidth={1.5}
